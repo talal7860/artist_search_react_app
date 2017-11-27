@@ -3,6 +3,7 @@ import { Table, Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import { ImageModal, Card, BoldTd } from 'components/index';
 import FontAwesome from 'react-fontawesome';
+import PropTypes from 'prop-types';
 
 const Img = styled.img`
   border-radius: 10%;
@@ -97,6 +98,18 @@ class ArtistDetailCard extends Component {
       </Card>
     );
   }
+}
+
+ArtistDetailCard.propTypes = {
+  artist: PropTypes.shape({
+    thumb_url: PropTypes.string,
+    image_url: PropTypes.string,
+    name: PropTypes.string,
+    url: PropTypes.string,
+    facebook_page_url: PropTypes.string,
+    mbid: PropTypes.string,
+    tracker_count: PropTypes.string,
+  }).isRequired,
 }
 
 export default ArtistDetailCard;

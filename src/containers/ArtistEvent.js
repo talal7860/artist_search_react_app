@@ -3,8 +3,9 @@ import {
   Table,
 } from 'reactstrap';
 import { BoldTd } from 'components/index';
+import PropTypes from 'prop-types';
 
-const ArtistEvent = ({ event: { id, venue, datetime, on_sale_time } } ) => {
+const ArtistEvent = ({ event: { id, venue, datetime } } ) => {
   return (
     <Table key={`table-${id}`}>
       <tbody key={`tbody-${id}`}>
@@ -27,5 +28,13 @@ const ArtistEvent = ({ event: { id, venue, datetime, on_sale_time } } ) => {
       </tbody>
     </Table>
 )};
+
+ArtistEvent.propTypes = {
+  event: PropTypes.shape({
+    id: PropTypes.number,
+    venue: PropTypes.string,
+    datetime: PropTypes.string,
+  }).isRequired,
+};
 
 export default ArtistEvent;

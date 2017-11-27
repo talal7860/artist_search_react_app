@@ -5,6 +5,7 @@ export const setCache = async (key, data) => {
   try {
     await localforage.setItem(camelCase(key), data);
   } catch(e) {
+    return;
   }
   return;
 }

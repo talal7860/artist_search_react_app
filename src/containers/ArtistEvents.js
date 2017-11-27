@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import { Card } from 'components/index';
 import { ArtistEvent } from 'containers/index';
 import { Carousel } from 'react-responsive-carousel';
+import PropTypes from 'prop-types';
 
 
 class ArtistEvents extends Component {
@@ -39,5 +39,8 @@ class ArtistEvents extends Component {
   }
 }
 
-export default ArtistEvents;
+ArtistEvents.propTypes = {
+  events: PropTypes.array.isRequired,
+};
 
+export default ArtistEvents;
