@@ -8,6 +8,7 @@
     "jquery": "1.9.1",
     "localforage": "^1.5.3",
     "lodash": "^4.17.4",
+    "babel-eslint": "7.2.3",
     "popper.js": "^1.12.3",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
@@ -18,10 +19,22 @@
     "reactstrap": "^5.0.0-alpha.4",
     "styled-components": "^2.2.3"
   },
+  "devDependencies": {
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "eslint": "^4.11.0",
+    "eslint-plugin-react": "^7.5.1",
+    "jest-localstorage-mock": "^2.1.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "scripts": {
     "start": "NODE_PATH=src/ react-scripts start",
     "build": "NODE_PATH=src/ react-scripts build",
     "test": "NODE_PATH=src/ react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/ --ignore-pattern=*test.js --ignore-pattern=registerServiceWorker.js",
+    "lint:fix": "lint --fix"
   }
 }
