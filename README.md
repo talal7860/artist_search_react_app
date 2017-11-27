@@ -16,3 +16,4 @@ You can find the most recent version of this guide [here](https://github.com/fac
 - If the artists has any upcoming events those will also be displayed below with slider to show multiple events.
 - Data is being cached in browser db, (will not work in safari private mode).
 - Beautifully styled.
+- Unit test cases written for components.
