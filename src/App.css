@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+body {
+  background: rgba(0,0,0,0.3);
+  background-repeat: no-repeat;
+  background-size: 100%, cover,cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url('assets/bg-mountain.png');
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.search-form {
+  margin-top: 35%;
+  width: 80%;
+  transition: all 700ms;
+}
+.container-loading {
+  cursor: progress;
+}
