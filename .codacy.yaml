@@ -1,2 +1,3 @@
 engines:
-  exclude_paths: src/registerServiceWorker.js
+  exclude_paths:
+    - src/registerServiceWorker.js
