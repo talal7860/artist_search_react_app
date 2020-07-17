@@ -7,7 +7,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "1.9.1",
     "localforage": "^1.5.3",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "babel-eslint": "7.2.3",
     "popper.js": "^1.12.3",
     "react": "^16.1.1",
